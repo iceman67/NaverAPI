@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_2f365cd28d7b434fbbdb5c0a52f8d309 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_2f365cd28d7b434fbbdb5c0a52f8d309" ></div>
+        
+</body>
+<script>    
+    
+            var map_2f365cd28d7b434fbbdb5c0a52f8d309 = L.map(
+                "map_2f365cd28d7b434fbbdb5c0a52f8d309",
+                {
+                    center: [36.833972, 127.178548],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 12,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_e80726016ff4464dbc50a041e13275b0 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_2f365cd28d7b434fbbdb5c0a52f8d309);
+        
+    
+            var marker_0ab28c0b9207422f844946f8d09237e3 = L.marker(
+                [36.834192, 127.178588],
+                {}
+            ).addTo(map_2f365cd28d7b434fbbdb5c0a52f8d309);
+        
+    
+            var icon_3582389edd384e79a06ba9d02158bd2b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_0ab28c0b9207422f844946f8d09237e3.setIcon(icon_3582389edd384e79a06ba9d02158bd2b);
+        
+    
+        var popup_6cb3e0f9ef4349bbb6c1c4b186427060 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7bced958b9a349ef955f130ee1331e73 = $(`<div id="html_7bced958b9a349ef955f130ee1331e73" style="width: 100.0%; height: 100.0%;">학교명</div>`)[0];
+            popup_6cb3e0f9ef4349bbb6c1c4b186427060.setContent(html_7bced958b9a349ef955f130ee1331e73);
+        
+
+        marker_0ab28c0b9207422f844946f8d09237e3.bindPopup(popup_6cb3e0f9ef4349bbb6c1c4b186427060)
+        ;
+
+        
+    
+</script>
